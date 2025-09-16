@@ -1,0 +1,204 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #3498db;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f8ff;
+    color: #2980b9;
+}
+
+input, select {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.result {
+    background-color: #eaf7ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none;
+}
+
+.employee-row {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.criteria-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.criteria-input label {
+    width: 180px;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.add-btn {
+    background-color: #2ecc71;
+    padding: 12px 20px;
+}
+
+.add-btn:hover {
+    background-color: #27ae60;
+}
+
+.calculate-btn {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.calculate-btn:hover {
+    background: linear-gradient(to right, #c0392b, #a93226);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.ranking-1 {
+    background-color: #d4edda;
+    font-weight: bold;
+}
+
+.ranking-2 {
+    background-color: #cce5ff;
+}
+
+.ranking-3 {
+    background-color: #fff3cd;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: help;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .criteria-input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .criteria-input label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
